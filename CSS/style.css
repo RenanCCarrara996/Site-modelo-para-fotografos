@@ -1,0 +1,170 @@
+    /*Tudo*/
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Cabeçalho*/
+
+    #header_nav:hover {
+        background-attachment: fixed;
+    }
+
+    header {
+        /*Título*/
+        background-color: rgba(0, 0, 0, 0.87);
+        color: navajowhite;
+        padding: 30px;
+    }
+
+    .logo {
+        display: flex;
+        align-content: center;
+    }
+
+    /*navegação*/
+    nav {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 1px;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        display: inline;
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+
+    /*animação abas navegação*/
+    li a:hover {
+        background-color: goldenrod;
+    }
+
+    .active {
+        text-decoration: dashed;
+        background-color: gold;
+    }
+
+    /*Portifólio*/
+    .gallery {
+        display: flex;
+        width: 10px;
+    }
+
+    .gallery img {
+        width: 200px;
+        height: 200px;
+        border: none;
+        border-radius: 30px;
+        padding: 5px 10px;
+        transition: color 0.3s;
+    }
+
+    .gallery img:hover {
+        color: #0056b3;
+        /*cor do texto*/
+        transform: scale(1.2);
+        /*escala de transformação*/
+        background-color: #225183;
+        /*cor de fundo*/
+    }
+
+    main h2,
+    h4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #texto_home {
+        margin-inline: 0;
+        background-color: rgba(46, 46, 46, 0.13);
+    }
+
+    #title_form {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        /*Formulário*/
+        max-width: 400px;
+        /*Comprimento máximo do forms*/
+        margin: 20px auto;
+        /*Margem do form*/
+        padding: 20px;
+        /*Preenchimento*/
+        border: 1px solid #ddd;
+        /*contorno do elemento, tamanho das linhas e cor, além da definição como sólido*/
+        border-radius: 5px;
+        /*arredondamento da borda*/
+    }
+
+    #space {
+        /*distância do título da seção das opções*/
+        margin-top: 7px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea,
+    select {
+        /*input's do tipo texto, telefone e email, e textareas e selects*/
+        width: 100%;
+        /*Comprimento*/
+        padding: 10px;
+        /*Preenchimento*/
+        margin: 10px 0;
+        /*Margem*/
+        border: 1px solid #ccc;
+        /*contorno do elemento, tamanho das linhas e cor, além da definição como sólido*/
+        border-radius: 5px;
+        /*arredondamento da borda*/
+        box-sizing: border-box;
+        /*Tamanho da caixa*/
+    }
+
+    input[type="submit"] {
+        /*Input's submit*/
+        background-color: #007bff;
+        /*cor de fundo*/
+        color: #fff;
+        /*cor do texto*/
+        border: none;
+        /*sem bordar*/
+        padding: 10px;
+        /*Preenchimento*/
+        border-radius: 5px;
+        /*arredondamento da borda*/
+        cursor: pointer;
+        /*tipo de mouse (cursor)*/
+        transition: background-color 0.3s;
+        /*mudar o fundo*/
+    }
+
+    input[type="submit"]:hover {
+        /*input submit quando o mouse está em cima*/
+        background-color: #0056b3;
+        /*cor de fundo muda*/
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.87);
+        color: navajowhite;
+        padding: 30px;
+    }
